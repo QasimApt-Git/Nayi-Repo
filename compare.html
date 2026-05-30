@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COSY AIRCONDITIONERS — Premium Climate Control</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="brand-cosy">COSY</span>
+        <span class="brand-ac">AC</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-grid-3x3-gap-fill text-cyan"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="Home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="brand.html">Brands</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#products">Products</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="compare.html">Compare</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Total: $<span id="total">0</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <!-- ========== COMPARE ========== -->
+  <section id="compare" class="section-dark py-5">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <p class="section-label">SIDE BY SIDE</p>
+        <h2 class="section-title">Compare <span class="glow-text">Products</span></h2>
+        <p class="section-sub">Select two products to compare features</p>
+      </div>
+
+      <div class="row g-3 mb-4 justify-content-center">
+        <div class="col-md-5">
+          <label class="form-label text-cyan">Product A</label>
+          <select class="form-select select-glow" id="compareA">
+            <option value="">-- Select Product --</option>
+            <option value="samsung-windfree">Samsung WindFree Elite</option>
+            <option value="samsung-classic">Samsung Wind-Free Classic</option>
+            <option value="lg-dual">LG Dual Inverter Pro</option>
+            <option value="daikin-streamer">Daikin Streamer X-Series</option>
+            <option value="whirlpool-magicool">Whirlpool Magicool Pro</option>
+            <option value="haier-cleancool">Haier CleanCool Ultra</option>
+            <option value="gree-fairy">Gree Fairy Series</option>
+          </select>
+        </div>
+        <div class="col-md-5">
+          <label class="form-label text-cyan">Product B</label>
+          <select class="form-select select-glow" id="compareB">
+            <option value="">-- Select Product --</option>
+            <option value="samsung-windfree">Samsung WindFree Elite</option>
+            <option value="samsung-classic">Samsung Wind-Free Classic</option>
+            <option value="lg-dual">LG Dual Inverter Pro</option>
+            <option value="daikin-streamer">Daikin Streamer X-Series</option>
+            <option value="whirlpool-magicool">Whirlpool Magicool Pro</option>
+            <option value="haier-cleancool">Haier CleanCool Ultra</option>
+            <option value="gree-fairy">Gree Fairy Series</option>
+          </select>
+        </div>
+        <div class="col-md-2 d-flex align-items-end">
+          <button class="btn btn-glow w-100" onclick="compareProducts()">Compare</button>
+        </div>
+      </div>
+
+      <div id="compareResult" class="d-none">
+        <div class="compare-table-wrap">
+          <table class="table compare-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th id="colA">Product A</th>
+                <th id="colB">Product B</th>
+              </tr>
+            </thead>
+            <tbody id="compareBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer-section">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <span class="brand-cosy">COSY</span><span class="brand-ac">AC</span>
+          <p class="mt-2 text-light small">Premium Climate Control Since 2005</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#home" class="footer-link">Home</a>
+            <a href="#brands" class="footer-link">Brands</a>
+            <!-- <a href="#products" class="footer-link">Products</a> -->
+            <a href="#contact" class="footer-link">Contact</a>
+          </div>
+        </div>
+        <div class="col-md-4 text-end">
+          <p class="text-light small">&copy; 2026 COSY AIRCONDITIONERS. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
